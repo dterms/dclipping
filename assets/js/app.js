@@ -8,11 +8,11 @@ const hamburger = document.querySelector('#amarmenu').addEventListener('click', 
 // jquery codes
 $(document).ready(function(){
   
-//   tabs js
-  $( "#tabs" ).tabs();
+  // tabs js
+  // $( "#tabs" ).tabs();
 
   //for multi images upload
-  $('.input-images').imageUploader();
+  // $('.input-images').imageUploader();
 
   // owl carousel
   $('.clientTestimonial__body').owlCarousel({

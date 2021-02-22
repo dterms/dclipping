@@ -18,6 +18,7 @@ textarea,
 label,
 span {
   font-family: "Poppins", sans-serif !important;
+  outline: none;
 }
 
 button {
@@ -40,6 +41,7 @@ button {
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
   border: none;
+  outline: none;
 }
 
 button:hover {
@@ -71,7 +73,7 @@ header {
 
 header .container {
   display: grid;
-  grid-template-columns: 15% 65% 20%;
+  grid-template-columns: 9% 71% 20%;
   align-items: center;
 }
 
@@ -271,9 +273,10 @@ header .container {
 /* brands section starts from here */
 
 .brands {
-  background: #f2f2f252;
-  text-align: center;
-  padding: 5rem 0;
+	background: #87ceeb08;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
 }
 .brands__header {
   margin-bottom: 3rem;
@@ -302,7 +305,7 @@ header .container {
   background: white;
   margin: 35px;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 #00000008;
+  box-shadow: 0 10px 20px 0 #87ceeb1c;
 }
 
 .brands__iconsIcon img {
@@ -314,11 +317,7 @@ header .container {
 /* service section starts here */
 
 .services {
-  padding: 4rem 0;
-}
-.services__header {
-  margin-bottom: 5rem;
-  text-align: center;
+  padding-top: 4rem;
 }
 .services__header p:first-child {
   color: #00e865;
@@ -329,12 +328,8 @@ header .container {
   font-weight: 300;
   color: #000000b0;
 }
-
-.services {
-  padding: 4rem 0;
-}
 .services__header {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   text-align: center;
 }
 .services__header p {
@@ -343,14 +338,15 @@ header .container {
 }
 
 .services__body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 5rem;
-  padding: 2rem 0 3rem 0;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5rem;
+	padding: 2rem 0 3rem 0;
 }
 .services__bodyService {
-  display: grid;
-  grid-template-columns: 10% 90%;
+	display: grid;
+	grid-template-columns: 10% 90%;
+	grid-gap: .5rem;
 }
 .services__bodyService .icon {
   margin-top: 0.4rem;
@@ -360,10 +356,10 @@ header .container {
   color: #535353;
 }
 .services__bodyService .context p {
-  font-size: 0.95rem;
-  line-height: 1.7rem;
-  font-weight: 300;
-  color: #00000094;
+	font-size: 0.9rem;
+	line-height: 1.7rem;
+	font-weight: 300;
+	color: #75929ecc;
 }
 
 /* service section ends here */
@@ -372,7 +368,7 @@ header .container {
 
 .pricing {
   background: #f5f5f570;
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 .pricing__header {
   padding-bottom: 5rem;
@@ -542,7 +538,7 @@ header .container {
 
 .workflow {
   padding-top: 5rem;
-  background: rgba(245, 245, 245, 0.438);
+  background: white;
 }
 .workflow__header {
   text-align: center;
@@ -592,6 +588,7 @@ header .container {
 
 .standout {
   background: #f5f5f570;
+  padding-top: 4rem;
 }
 .stantout__header {
   text-align: center;
@@ -631,7 +628,7 @@ header .container {
 .standout__bodyExplanation {
   text-align: center;
   background: white;
-  padding: 3rem;
+  padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 0 10px 0 #0000000a;
 }
@@ -653,7 +650,8 @@ header .container {
 }
 
 .standout__bodyExplanation h1 {
-  font-size: 1.5rem;
+	font-size: 1.3rem;
+	color: #000000bd;
 }
 
 .standout__bodyExplanation > div {
@@ -957,18 +955,27 @@ footer .container {
 	color: #000000b3;
 }
 
-.affordAblePricing
-  .affordAblePricing__left
-  .affordAblePricing__leftButtons
-  button {
-  background: -webkit-linear-gradient(
-    -22deg,
-    rgb(13, 135, 201) 0%,
-    rgb(119, 204, 122) 100%
-  );
-  font-weight: bold;
-  padding: 1rem 2rem;
-  font-family: 'Poppins', sans-serif;
+.affordAblePricing .affordAblePricing__left .affordAblePricing__leftButtons button {
+	background: -webkit-linear-gradient( -22deg, rgb(13, 135, 201) 0%, rgb(119, 204, 122) 100% );
+	font-weight: bold;
+	padding: .5rem 1.5rem;
+	font-family: 'Poppins', sans-serif;
+}
+
+.affordAblePricing .affordAblePricing__left .affordAblePricing__leftButtons button:last-child {
+  background: white !important;
+  border: 1px solid dodgerblue;
+  color: dodgerblue;
+}
+
+.affordAblePricing .affordAblePricing__left .affordAblePricing__leftButtons button:last-child:hover {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  background: dodgerblue !important;
+  color: white !important;
 }
 
 /* afforable pricing section ends here */
@@ -976,7 +983,7 @@ footer .container {
 /* work with us section starts here */
 
 .workwithus {
-  height: 35vh;
+  height: 50vh;
   background: url("../images/workflowPageImages/workwithus/work-with.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -1029,6 +1036,10 @@ footer .container {
   justify-content: center;
   text-align: center;
   grid-gap: 50px;
+}
+
+.workShowCaseBody__top h1, .workShowCaseBody__bottom h1 {
+	color: #000000b0;
 }
 
 .workShowCaseBody__top div:nth-child(4),
@@ -1104,7 +1115,7 @@ footer .container {
 }
 
 .workflowCallToAction h1 {
-  font-size: 3.3rem;
+  font-size: 2rem;
   width: 50%;
   margin: 0 auto;
   margin-bottom: 3rem;
@@ -1127,6 +1138,9 @@ footer .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 55%;
+}
+.workFlowContact__left h1 {
+	color: #26f17f;
 }
 .pricingshowcase__bodyLeft ul li {
   display: flex;
@@ -1154,14 +1168,6 @@ footer .container {
   border: 1px solid #d1d1d154;
   outline: none;
   font-size: 1rem;
-}
-
-.workFlowContact__right form textarea {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
 }
 
 .workFlowContact__right button {
@@ -1393,7 +1399,6 @@ footer .container {
 .serviceBottom__tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: 1.5rem;
 }
 
 .serviceBottom__tabs li {
@@ -1440,8 +1445,10 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .serviceBottom__service p {
-  font-weight: 300;
-  line-height: 2rem;
+	font-weight: 300;
+	line-height: 2rem;
+	color: #a2bbc5;
+	font-size: .95rem;
 }
 
 .portfolioContainer {
@@ -1499,8 +1506,12 @@ html .ui-button.ui-state-disabled:active {
   height: 100%;
   text-align: center;
   border-radius: 10px;
-  transition: all 0.5s;
+  transition: all 1s;
   transform-style: preserve-3d;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 
 .servicePortfolio .container .card-front,
@@ -1530,7 +1541,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .servicePortfolio .container .card-back {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.363), rgba(0, 0, 0, 0.5)),
+  background-image:
     url("../images/servicePage/christopher-gower-m_HRfLhgABo-unsplash.jpg");
   background-position: center;
   background-size: cover;
@@ -1717,16 +1728,15 @@ html .ui-button.ui-state-disabled:active {
   font-weight: 200;
 }
 
-.contactus__right form input, .contactus__right form textarea {
-	display: block;
-	width: 100%;
-	margin: 1.5rem 0;
-	padding: 0.5rem 1rem;
-	border-radius: 30px;
-	border: none;
-	background: #f9f9fb;
-	font-size: .85rem;
-  outline: none;
+.contactus__right form input,
+.contactus__right form textarea {
+  display: block;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  border: none;
+  background: #f9f9fb;
 }
 
 .contactus .contactus__right {
@@ -1748,7 +1758,7 @@ html .ui-button.ui-state-disabled:active {
 .contact__social img {
 	margin-right: 2rem;
 	background: white;
-	padding: .3rem;
+	padding: .5rem;
 	border-radius: 5px;
 }
 .contact__social {
@@ -2042,9 +2052,12 @@ html .ui-button.ui-state-disabled:active {
     display: block;
   }
   .whyClientsLikeUs .container h1 {
-	width: 70%;
-	font-size: 2rem;
-}
+    width: 70%;
+    font-size: 2rem;
+  }
+  .services__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* for screen size 950px */
@@ -2113,7 +2126,8 @@ html .ui-button.ui-state-disabled:active {
   }
 
   .workflow__header p:last-child {
-    width: 80%;
+    width: 100% !important;
+    font-size: .85rem;
   }
 
   .workflow__body div img {
@@ -2188,17 +2202,19 @@ html .ui-button.ui-state-disabled:active {
     grid-template-columns: repeat(2, 1fr);
   }
   .pricing__bodyPricing img:first-child {
-    width: 20%;
-    margin-bottom: 1rem;
+    width: 30%;
+    margin-bottom: 0.5rem;
     padding: 0.3rem;
   }
 
   .pricing__bodyPricing h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+
   }
 
   .pricing__bodyPricing {
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
   }
 
   .services__body {
@@ -2210,7 +2226,7 @@ html .ui-button.ui-state-disabled:active {
     margin-bottom: 2rem;
   }
   .pricing {
-    padding-top: 5rem;
+    padding: 2rem 0;
   }
   .calltoaction h1 {
     font-size: 1.5rem;
@@ -2218,6 +2234,27 @@ html .ui-button.ui-state-disabled:active {
   .calltoaction button {
     padding: 1rem 3rem;
     font-size: 1rem;
+  }
+  .standout__bodyExplanation {
+    padding: 1.5rem;
+  }
+  .services__bodyService .context p {
+    font-size: 0.85rem;
+  }
+  .testimonial {
+    padding: 0rem 0;
+    padding-bottom: 3rem;
+  }
+  .standout__bodyExplanation > div {
+    height: 90px !important;
+    width: 90px !important;
+  }
+  .workflow__body button {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+  .services__body {
+    grid-template-columns: 1fr;
   }
 }
 /* for screen size 600px */
@@ -2267,97 +2304,7 @@ html .ui-button.ui-state-disabled:active {
   footer {
     overflow-x: hidden;
   }
-  .workflowCallToAction button {
-    padding: 1rem 2rem;
-  }
-  .workShowCaseBody__top div h1 {
-    font-size: 1rem;
-  }
-  .workShowCase__header h1 {
-    font-size: 1.5rem;
-  }
-  .workShowCase__header p {
-    width: 100%;
-  }
-  .workFlowContact__right {
-    padding: 2rem 1.5rem;
-  }
-  .serviceTab .container h1 {
-    font-size: 1.5rem;
-  }
-  .serviceTab .container p {
-    font-size: .85rem;
-  }
-  .serviceBottom__tabs li {
-    padding: 0.5rem 1rem;
-    /* background: #00e886; */
-    margin: 0.5rem 0.3rem;
-    border-radius: 30px;
-  }
-  .serviceBottom__tabs li a {
-    font-size: .75rem;
-  }
-  .serviceBottom {
-    padding: 1rem 0;
-  }
-  .ui-tabs .ui-tabs-nav li {
-    margin: 0.7rem 0.5rem !important;
-  }
-  .serviceBottom__service {
-    grid-template-columns: 1fr;
-  }
-  .serviceBottom__service h1 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-  }
-  .serviceBottom__service p {
-    color: gray;
-    font-size: .85rem;
-  }
-  .serviceCalltoaction__features {
-    width: 100%;
-  }
-  .serviceCalltoaction__features div ul li p {
-    font-weight: 300;
-    font-size: .85rem;
-  }
-  .portfolioContainer h1 {
-    font-size: 1.5rem;
-  }
-  .portfolioContainer p:last-child {
-    width: 80% !important;
-  }
-  .servicePortfolio .container .row {
-    width: 85%;
-    margin: auto;
-    grid-template-columns: 1fr;
-  }
-  .footer__columnOne p {
-    width: 100%;
-  }
-  .footer__columnOneSocial img {
-    width: 8.5%;
-  }
-  .pricingshowcase__bodyRight {
-    padding: 2rem 1.5rem;
-  }
-  .contactus__left h1 {
-    font-size: 2rem;
-  }
-  .contactus__left .subheading {
-    font-size: 1rem;
-  }
-  .contactus__left p {
-    font-size: .8rem;
-  }
-  .contact__details div img {
-    width: 20px;
-  }
 }
-
-
-/* ------------------------------------------------------- */
-
 
 /* responsiveness in height starts here */
 /* for screen size 910px in height */
@@ -2429,6 +2376,7 @@ html .ui-button.ui-state-disabled:active {
   margin: 5px 7px;
   background: white;
   display: block;
+  backface-visibility: visible;
   -webkit-backface-visibility: visible;
   transition: opacity 0.2s ease;
   border-radius: 30px;
