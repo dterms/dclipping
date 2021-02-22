@@ -559,8 +559,9 @@ header .container {
 }
 
 .workflow__body {
-  text-align: center;
-  margin: 5rem 0;
+	text-align: center;
+	margin-bottom: 3rem;
+	margin-top: 2rem;
 }
 
 .workflow__body h3 {
@@ -1242,6 +1243,15 @@ footer .container {
   box-shadow: 0 0 20px 0 #0000000f;
 }
 
+
+.workFlowContact__right form textarea {
+  border-radius: 15px;
+}
+.workFlowContact {
+  padding: 2rem 0;
+  background: #f5f5f570;
+}
+
 .pricingshowcase__bodyRight {
   background: #ffffff45;
   border-radius: 5px;
@@ -1399,6 +1409,7 @@ footer .container {
 .serviceBottom__tabs {
   display: flex;
   justify-content: center;
+  margin-bottom: 2rem !important;
 }
 
 .serviceBottom__tabs li {
@@ -1450,6 +1461,25 @@ html .ui-button.ui-state-disabled:active {
 	color: #a2bbc5;
 	font-size: .95rem;
 }
+
+.serviceBottom__service ul {
+  margin-top: 2rem;
+}
+
+.serviceBottom__service ul li {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.serviceBottom__service ul li img {
+  width: 20px;
+  margin-right: 1rem;
+}
+.serviceBottom__service ul li span {
+	color: #88a7b3;
+}
+
 
 .portfolioContainer {
   padding: 4rem 0;
@@ -1838,6 +1868,9 @@ html .ui-button.ui-state-disabled:active {
     button {
     padding: 0.5rem 1rem;
   }
+  .serviceBottom__service {
+    grid-template-columns: .6fr .4fr;
+  }
 }
 
 /* for screen size 1350px */
@@ -1931,6 +1964,10 @@ html .ui-button.ui-state-disabled:active {
 
   .section__header h1 {
     font-size: 2.5rem;
+  }
+  .serviceBottom__service {
+    grid-template-columns: 1fr;
+    grid-row-gap: 2rem;
   }
 }
 
@@ -2057,6 +2094,9 @@ html .ui-button.ui-state-disabled:active {
   }
   .services__body {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .serviceBottom__service h1 {
+    font-size: 1.5rem;
   }
 }
 
@@ -2303,6 +2343,137 @@ html .ui-button.ui-state-disabled:active {
   }
   footer {
     overflow-x: hidden;
+  }
+  .serviceBottom__service p {
+    font-size: .85rem;
+  }
+  .serviceBottom__service ul li span {
+    color: #88a7b3;
+    font-size: .85rem;
+  }
+  .serviceCalltoaction__features div ul li p {
+    font-size: .9rem;
+  }
+  .workflowCallToAction button {
+    padding: 1rem 2rem;
+  }
+  .workflowCallToAction h1 {
+    color: dodgerblue;
+  }
+  .serviceCalltoaction__features {
+    width: 95%;
+  }
+  .portfolioContainer h1 {
+    font-size: 1.5rem;
+  }
+  .portfolioContainer p:last-child {
+    font-size: .85rem;
+  }
+  .workFlowContact__left h1 {
+    font-size: 1.3rem;
+  }
+  .workFlowContact__left ul li span {
+    font-size: .9rem;
+    margin-left: .5rem;
+  }
+  .workFlowContact__right {
+    padding: 1rem 1.5rem;
+  }
+  .servicePortfolio .container .row {
+    grid-template-columns: 1fr;
+  }
+  .footer__columnOneSocial img {
+    width: 6.5%;
+  }
+  .serviceTab .container h1 {
+    font-size: 1.5rem;
+  }
+  .serviceTab .container p {
+    font-size: .85rem;
+  }
+  .contactus__left h1 {
+    font-size: 2rem;
+  }
+  .contactus__left .subheading {
+    font-size: .83rem;
+    font-weight: 200;
+  }
+  .contactus__left p {
+    font-size: .9rem;
+  }
+  .contact__social img {
+    margin-right: .85rem;
+    width: 30px;
+  }
+  .contactus .contactus__right {
+    padding: 1rem 1rem;
+  }
+  .contactus .pricingContainer {
+    padding: 2rem 1.5rem;
+  }
+  .contactus__right form input, .contactus__right form textarea {
+    font-size: .8rem;
+  }
+  .btn {
+    padding: 5px 15px;
+    font-size: .9rem;
+  }
+  .mobilemenu__header img:first-child {
+    width: 130px;
+  }
+  .contact__details div {
+    margin: 1rem 0;
+  }
+  .contact__details {
+    margin-top: 2rem;
+  }
+  .pricingshowcase__header h1 {
+    font-size: 1.5rem;
+  }
+  .pricingshowcase__header p:last-child {
+    font-size: .85rem;
+    width: 100%;
+  }
+  .pricingshowcase__bodyLeft ul li span {
+    font-size: .9rem;
+    color: gray;
+  }
+  .pricingshowcase__bodyRight {
+    padding: 1rem 1rem;
+  }
+  .pricingshowcase__bodyRight form input, .pricingshowcase__bodyRight form textarea {
+    font-size: .8rem;
+  }
+  .pricingWorkShowCase__header h1 {
+    font-size: 1.5rem;
+  }
+  .pricingWorkShowCase__header p:last-child {
+    width: 100%;
+    font-size: .85rem;
+  }
+  .pricingWorkShowCaseBody {
+    grid-template-columns: 1fr;
+  }
+  .pricingWorkShowCaseBody div:first-child p, .pricingWorkShowCaseBody div:nth-child(2) p {
+    margin-top: 0rem;
+    color: whitesmoke;
+    font-size: .85rem !important;
+  }
+  .pricingWorkShowCaseBody h1 {
+    font-size: 1.1rem;
+  }
+  .pricingWorkShowCaseBody p {
+    font-size: .85rem;
+  }
+  .paymentAccept h1 {
+    font-size: 1.2rem;
+  }
+  .paymentAccept .subheading {
+    color: gray;
+    font-size: .85rem;
+  }
+  .paymentAccept img {
+    width: 80%;
   }
 }
 
