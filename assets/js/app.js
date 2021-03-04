@@ -5,14 +5,26 @@ const hamburger = document.querySelector('#amarmenu').addEventListener('click', 
 })
 
 
+var fileName = location.pathname.substring(
+  location.pathname.lastIndexOf("/") + 1
+);
+// console.log(fileName);
+
+
 // jquery codes
 $(document).ready(function(){
-  
-//   tabs js
-  $( "#tabs" ).tabs();
 
-//   for multi images upload
-  $('.input-images').imageUploader();
+  if(fileName == "services.html"){
+    
+    //   tabs js
+      $( "#tabs" ).tabs();
+  }
+  
+
+  if(fileName == "pricing.html"){
+    //   for multi images upload
+    $('.input-images').imageUploader();
+  }
 
   // owl carousel
   $('.clientTestimonial__body').owlCarousel({

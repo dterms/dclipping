@@ -847,6 +847,8 @@ header .container {
 footer {
   background: #054365;
   padding: 3rem 0;
+  position: relative;
+  
 }
 footer .container {
   display: grid;
