@@ -14,7 +14,7 @@ console.log(fileName);
 // jquery codes
 $(document).ready(function(){
 
-  if(fileName == "services.html"){
+  if(fileName == "service.html"){
     
     //   tabs js
       $( "#tabs" ).tabs();
