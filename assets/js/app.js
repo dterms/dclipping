@@ -71,6 +71,28 @@ $(document).ready(function(){
   
 })
 
+
+// service page filter
+if(fileName == 'service.html'){
+  const filter = document.querySelectorAll('.serviceservices__filterHeader ul li');
+
+  const servicefilter = Array.from(filter);
+
+  servicefilter.forEach((menu) => {
+    console.log(servicefilter[0].classList)
+    menu.addEventListener('click', (event) => {
+      
+      servicefilter.forEach((filttter) => {
+        filttter.classList.remove('active')
+      })
+      
+      event.target.classList.add('active')
+
+    })
+  })
+
+}
+
 var i;
 const services = document.querySelectorAll('.service');
 const showService = (service) => {

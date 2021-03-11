@@ -1630,7 +1630,6 @@ html .ui-button.ui-state-disabled:active {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 4rem 0;
-  text-align: center;
   color: white;
   position: relative;
   overflow: hidden;
@@ -1641,6 +1640,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .serviceCalltoaction h1 {
   font-size: 2rem;
+  text-align: center;
 }
 .serviceCalltoaction button {
   border: none;
