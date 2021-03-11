@@ -273,10 +273,10 @@ header .container {
 /* brands section starts from here */
 
 .brands {
-	background: #f7fafc;
-	text-align: center;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+  background: #f7fafc;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .brands__header p:first-child {
@@ -302,21 +302,22 @@ header .container {
 }
 
 .brands__iconsIcon {
-	/* padding: 30px 0px; */
-	background: white;
-	margin: 20px;
-	border-radius: 10px;
-	box-shadow: 0 0 3px 0 rgba(0,0,0,.05),0 3px 10px 0 rgba(0,0,0,.01),0 18px 30px -10px rgba(75,82,94,.099);
-	height: 80px;
-	width: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	transition: all .5s;
-	cursor: pointer;
+  /* padding: 30px 0px; */
+  background: white;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.05), 0 3px 10px 0 rgba(0, 0, 0, 0.01),
+    0 18px 30px -10px rgba(75, 82, 94, 0.099);
+  height: 80px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 .brands__iconsIcon:hover {
-	box-shadow: 0 10px 10px 0 #87ceeb7a;
+  box-shadow: 0 10px 10px 0 #87ceeb7a;
 }
 .brands__iconsIcon img {
   width: 30%;
@@ -348,15 +349,15 @@ header .container {
 }
 
 .services__body {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 5rem;
-	padding: 2rem 0 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5rem;
+  padding: 2rem 0 3rem 0;
 }
 .services__bodyService {
-	display: grid;
-	grid-template-columns: 10% 90%;
-	grid-gap: .5rem;
+  display: grid;
+  grid-template-columns: 10% 90%;
+  grid-gap: 0.5rem;
 }
 .services__bodyService .icon {
   margin-top: 0.4rem;
@@ -366,10 +367,10 @@ header .container {
   color: #535353;
 }
 .services__bodyService .context p {
-	font-size: 0.9rem;
-	line-height: 1.7rem;
-	font-weight: 300;
-	color: #75929ecc;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  font-weight: 300;
+  color: #75929ecc;
 }
 
 /* service section ends here */
@@ -569,9 +570,9 @@ header .container {
 }
 
 .workflow__body {
-	text-align: center;
-	margin-bottom: 3rem;
-	margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
 }
 
 .workflow__body h3 {
@@ -661,8 +662,8 @@ header .container {
 }
 
 .standout__bodyExplanation h1 {
-	font-size: 1.3rem;
-	color: #000000bd;
+  font-size: 1.3rem;
+  color: #000000bd;
 }
 
 .standout__bodyExplanation > div {
@@ -849,7 +850,6 @@ footer {
   background: #054365;
   padding: 3rem 0;
   position: relative;
-  
 }
 footer .container {
   display: grid;
@@ -964,28 +964,41 @@ footer .container {
 }
 
 .affordAblePricing__left h1 {
-	font-size: 2rem;
-	color: #000000d9;
+  font-size: 2rem;
+  color: #000000d9;
 }
 
 .affordAblePricing__left p {
-	color: #000000d9;
+  color: #000000d9;
 }
 
-.affordAblePricing .affordAblePricing__left .affordAblePricing__leftButtons button {
-	background: -webkit-linear-gradient( -22deg, rgb(13, 135, 201) 0%, rgb(119, 204, 122) 100% );
-	font-weight: bold;
-	padding: .5rem 1.5rem;
-	font-family: 'Poppins', sans-serif;
+.affordAblePricing
+  .affordAblePricing__left
+  .affordAblePricing__leftButtons
+  button {
+  background: -webkit-linear-gradient(
+    -22deg,
+    rgb(13, 135, 201) 0%,
+    rgb(119, 204, 122) 100%
+  );
+  font-weight: bold;
+  padding: 0.5rem 1.5rem;
+  font-family: "Poppins", sans-serif;
 }
 
-.affordAblePricing .affordAblePricing__left .affordAblePricing__leftButtons button:last-child {
+.affordAblePricing
+  .affordAblePricing__left
+  .affordAblePricing__leftButtons
+  button:last-child {
   background: white !important;
   border: 1px solid dodgerblue;
   color: dodgerblue;
 }
 
-.affordAblePricing .affordAblePricing__left .affordAblePricing__leftButtons button:last-child:hover {
+.affordAblePricing
+  .affordAblePricing__left
+  .affordAblePricing__leftButtons
+  button:last-child:hover {
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1057,6 +1070,8 @@ footer .container {
 
 .workShowCaseBody__top h1, .workShowCaseBody__bottom h1 {
 	color: #000000b0;
+	font-weight: 600;
+	font-size: 1.4rem;
 }
 
 .workShowCaseBody__top div:nth-child(4),
@@ -1157,7 +1172,7 @@ footer .container {
   width: 55%;
 }
 .workFlowContact__left h1 {
-	color: #26f17f;
+  color: #26f17f;
 }
 .pricingshowcase__bodyLeft ul li {
   display: flex;
@@ -1184,7 +1199,7 @@ footer .container {
   border-radius: 30px;
   border: 1px solid #d1d1d154;
   outline: none;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .workFlowContact__right button {
@@ -1259,7 +1274,6 @@ footer .container {
   box-shadow: 0 0 20px 0 #0000000f;
 }
 
-
 .workFlowContact__right form textarea {
   border-radius: 15px;
 }
@@ -1284,6 +1298,10 @@ footer .container {
   border: 1px solid #d1d1d154;
   outline: none;
   font-size: 1rem;
+}
+
+.pricingshowcase__bodyRight form textarea {
+  border-radius: 10px;
 }
 
 .pricingshowcase__bodyRight button {
@@ -1332,14 +1350,27 @@ footer .container {
   font-size: 2.5rem;
 }
 .servicePortfolio .container .col {
-	flex-basis: 30%;
-	overflow: hidden;
-	margin-bottom: 3rem;
-	border-radius: 10px;
+  flex-basis: 30%;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  border-radius: 10px;
 }
 
 .pricingWorkShowCaseBody div:first-child p {
-  margin-top: 3.5rem;
+	margin-top: 3.5rem;
+	color: #e6e6e6;
+}
+.pricingWorkShowCaseBody div p {
+	color: #e6e6e6;
+}
+
+.image-uploader .upload-text i {
+	color: #00abff;
+}
+
+.image-uploader .upload-text span {
+	display: block;
+	color: gray;
 }
 
 .pricingWorkShowCaseBody div:nth-child(2) p {
@@ -1360,8 +1391,9 @@ footer .container {
   text-align: center;
 }
 .pricingWorkShowCaseBody h1 {
-  margin: 1rem 0;
-  font-size: 1.5rem;
+	margin: 1rem 0;
+	font-size: 1.5rem;
+	font-weight: 600;
 }
 
 /* pricng work showcase ends here */
@@ -1374,17 +1406,17 @@ footer .container {
 }
 
 .paymentAccept h1 {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
+	color: #000000c7;
 }
 
 .paymentAccept .subheading {
-  width: 50%;
-  margin: 0 auto;
-  font-weight: 300;
-  line-height: 30px;
-  color: #000000b5;
+	width: 50%;
+	margin: 0 auto;
+	font-weight: 300;
+	line-height: 30px;
+	color: #00000038;
 }
-
 /* payment section ends here */
 
 /* pricng page style ends here */
@@ -1413,12 +1445,12 @@ footer .container {
   color: white;
 }
 .serviceTab .container h1 {
-	font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 .serviceTab .container p {
-	font-size: 0.9rem;
-	width: 50%;
-	margin: auto;
+  font-size: 0.9rem;
+  width: 50%;
+  margin: auto;
 }
 
 .serviceBottom {
@@ -1432,13 +1464,13 @@ footer .container {
   margin-top: 3rem;
 }
 .serviceservices__filterHeader ul li {
-	display: inline-block;
-	font-family: 'Poppins', san-serif;
-	background: #ebf3f7;
-	color: #000000c4;
-	padding: .5rem 1rem;
-	border-radius: 30px;
-	margin: 0 .5rem;
+  display: inline-block;
+  font-family: "Poppins", san-serif;
+  background: #ebf3f7;
+  color: #000000c4;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  margin: 0.5rem;
   cursor: pointer;
 }
 
@@ -1492,10 +1524,10 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .serviceBottom__service p {
-	font-weight: 300;
-	line-height: 2rem;
-	color: #a2bbc5;
-	font-size: .95rem;
+  font-weight: 300;
+  line-height: 2rem;
+  color: #a2bbc5;
+  font-size: 0.95rem;
 }
 
 .serviceBottom__service ul {
@@ -1513,9 +1545,8 @@ html .ui-button.ui-state-disabled:active {
   margin-right: 1rem;
 }
 .serviceBottom__service ul li span {
-	color: #88a7b3;
+  color: #88a7b3;
 }
-
 
 .portfolioContainer {
   padding: 4rem 0;
@@ -1607,8 +1638,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .servicePortfolio .container .card-back {
-  background-image:
-    url("../images/servicePage/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-image: url("../images/servicePage/christopher-gower-m_HRfLhgABo-unsplash.jpg");
   background-position: center;
   background-size: cover;
   transform: rotateX(180deg);
@@ -1803,6 +1833,11 @@ html .ui-button.ui-state-disabled:active {
   border-radius: 30px;
   border: none;
   background: #f9f9fb;
+  font-size: .9rem;
+}
+
+.contactus__right form textarea {
+  border-radius: 10px;
 }
 
 .contactus .contactus__right {
@@ -1822,10 +1857,10 @@ html .ui-button.ui-state-disabled:active {
   margin-right: 0.7rem;
 }
 .contact__social img {
-	margin-right: 2rem;
-	background: white;
-	padding: .5rem;
-	border-radius: 5px;
+  margin-right: 2rem;
+  background: white;
+  padding: 0.5rem;
+  border-radius: 5px;
 }
 .contact__social {
   margin-top: 3rem;
@@ -1849,8 +1884,8 @@ html .ui-button.ui-state-disabled:active {
     grid-template-columns: 15% 55% 30%;
   }
   .workShowCaseBody__top div h1 {
-	font-size: 1.5rem;
-}
+    font-size: 1.5rem;
+  }
 }
 
 /* for screen size 1600px */
@@ -1879,6 +1914,24 @@ html .ui-button.ui-state-disabled:active {
   .workFlowContact .container {
     width: 65%;
   }
+  .header__bottom .container {
+    grid-template-columns: 1fr;
+    grid-gap: 5rem;
+  }
+  .header__bottomLeft {
+    padding-top: 3rem;
+  }
+  .header__bottomLeft .header__bottomGetStartged {
+    width: 20%;
+  }
+  .header__bottomLeft p {
+    width: 50%;
+  }
+  .header__bottomLeft h1 {
+    font-size: 2.5rem;
+    width: 40%;
+    margin-bottom: 1rem;
+  }
 }
 
 /* for screen size 1489px */
@@ -1905,7 +1958,7 @@ html .ui-button.ui-state-disabled:active {
     padding: 0.5rem 1rem;
   }
   .serviceBottom__service {
-    grid-template-columns: .6fr .4fr;
+    grid-template-columns: 0.6fr 0.4fr;
   }
 }
 
@@ -1975,6 +2028,10 @@ html .ui-button.ui-state-disabled:active {
   .clientTestimonial__right .first {
     bottom: -65%;
   }
+  .affordAblePricing {
+    padding: 0;
+    padding-bottom: 4rem;
+  }
 }
 
 /* for screen size 1250px */
@@ -2010,6 +2067,17 @@ html .ui-button.ui-state-disabled:active {
   }
   .serviceTab .container p {
     width: 70%;
+  }
+  .header__bottomLeft .header__bottomGetStartged {
+    width: 30%;
+  }
+  .header__bottomLeft p {
+    width: 70%;
+  }
+  .header__bottomLeft h1 {
+    font-size: 2.5rem;
+    width: 70%;
+    margin-bottom: 1rem;
   }
 }
 
@@ -2140,6 +2208,26 @@ html .ui-button.ui-state-disabled:active {
   .serviceBottom__service h1 {
     font-size: 1.5rem;
   }
+  
+  .affordAblePricing__left {
+    margin-top: 0rem;
+  }
+  .affordAblePricing {
+    padding: 3rem 0;
+    padding-top: 0;
+  }
+  .workflow {
+    padding-top: 1rem;
+  }
+  .workShowCase__header {
+    padding: 3rem 0;
+  }
+  .workShowCase {
+    padding-bottom: 2rem;
+  }
+  .services__body {
+    grid-gap: 2rem;
+  }
 }
 
 /* for screen size 950px */
@@ -2167,7 +2255,13 @@ html .ui-button.ui-state-disabled:active {
   }
 
   .workShowCaseBody__top div h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+  }
+  .workShowCaseBody div p {
+    font-size: 0.85rem;
+  }
+  .workShowCaseBody div img {
+    width: 20%;
   }
 
   .whyClientsLikeUs {
@@ -2186,9 +2280,35 @@ html .ui-button.ui-state-disabled:active {
     font-size: 0.8rem;
   }
   .workflowCallToAction h1 {
-	font-size: 2rem;
-}
+    font-size: 2rem;
+  }
 
+  .workflowCallToAction h1 {
+    font-size: 1.5rem !important;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .workwithus .container h1 {
+    font-size: 1.7rem;
+  }
+
+  .workShowCase__header h1 {
+    font-size: 1.5rem;
+  }
+
+  .workShowCase__header p {
+    width: 100%;
+  }
+  .workflow__body h3 {
+    font-size: .9rem;
+  }
+  .workflow__body h3 {
+    font-size: .9rem;
+  }
+  .affordAblePricing__left p {
+    color: #00000047;
+    font-size: .9rem;
+  }
 
 }
 
@@ -2209,7 +2329,7 @@ html .ui-button.ui-state-disabled:active {
 
   .workflow__header p:last-child {
     width: 100% !important;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
 
   .workflow__body div img {
@@ -2235,23 +2355,23 @@ html .ui-button.ui-state-disabled:active {
     grid-gap: 3rem;
   }
   .workflowCallToAction h1 {
-	font-size: 1.5rem;
-	width: 60%;
-	margin-bottom: 1rem;
-}
+    font-size: 1.5rem;
+    width: 60%;
+    margin-bottom: 1rem;
+  }
 
   .serviceTab .container h1 {
     font-size: 1.5rem !important;
   }
   .serviceTab .container p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
-    padding: .5em;
-    font-size: .8rem;
+    padding: 0.5em;
+    font-size: 0.8rem;
   }
   .ui-tabs .ui-tabs-nav li {
-    margin: 0.4rem .2rem !important;
+    margin: 0.4rem 0.2rem !important;
   }
   .serviceCalltoaction__features div:first-child ul li:last-child {
     margin-bottom: 0;
@@ -2261,9 +2381,19 @@ html .ui-button.ui-state-disabled:active {
   }
   .footer__columnOne p {
     width: 85%;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
-
+  .header__bottomLeft .header__bottomGetStartged {
+    width: 100%;
+  }
+  .header__bottomLeft p {
+    width: 80%;
+  }
+  .header__bottomLeft h1 {
+    font-size: 2.5rem;
+    width: 80%;
+    margin-bottom: 1rem;
+  }
 }
 
 /* for screen size 750px */
@@ -2298,10 +2428,6 @@ html .ui-button.ui-state-disabled:active {
     font-size: 1rem;
     font-weight: 500;
   }
-
-  .workShowCase__header p {
-    width: 75%;
-  }
   .section__header h1 {
     font-size: 1.7rem;
   }
@@ -2317,7 +2443,6 @@ html .ui-button.ui-state-disabled:active {
   .pricing__bodyPricing h2 {
     font-size: 1.1rem;
     font-weight: 600;
-
   }
 
   .pricing__bodyPricing {
@@ -2334,6 +2459,7 @@ html .ui-button.ui-state-disabled:active {
   }
   .pricing {
     padding: 2rem 0;
+    padding-bottom: 0;
   }
   .calltoaction h1 {
     font-size: 1.5rem;
@@ -2368,15 +2494,20 @@ html .ui-button.ui-state-disabled:active {
   }
   .serviceTab .container p {
     width: 100%;
-    font-size: .8rem;
+    font-size: 0.8rem;
+  }
+  .serviceservices__filterHeader ul li {
+    padding: 0.35rem 0.5rem;
+    margin: 0.3rem;
+    font-size: 0.8rem;
   }
 }
 /* for screen size 600px */
 @media screen and (max-width: 600px) {
-	.workflowCallToAction h1 {
-		font-size: 1.5rem;
-		width: 90%;
-	}
+  .workflowCallToAction h1 {
+    font-size: 1.5rem;
+    width: 90%;
+  }
 
   .contactus .pricingContainer {
     padding: 3rem 2.5rem;
@@ -2390,8 +2521,8 @@ html .ui-button.ui-state-disabled:active {
     .affordAblePricing__left
     .affordAblePricing__leftButtons
     button {
-    font-size: .85rem;
-	margin: 0;
+    font-size: 0.85rem;
+    margin: 0;
   }
 
   .clientTestimonial__right h5 {
@@ -2415,14 +2546,14 @@ html .ui-button.ui-state-disabled:active {
     overflow-x: hidden;
   }
   .serviceBottom__service p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .serviceBottom__service ul li span {
     color: #88a7b3;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .serviceCalltoaction__features div ul li p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .workflowCallToAction button {
     padding: 1rem 2rem;
@@ -2437,14 +2568,14 @@ html .ui-button.ui-state-disabled:active {
     font-size: 1.5rem;
   }
   .portfolioContainer p:last-child {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .workFlowContact__left h1 {
     font-size: 1.3rem;
   }
   .workFlowContact__left ul li span {
-    font-size: .9rem;
-    margin-left: .5rem;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
   }
   .workFlowContact__right {
     padding: 1rem 1.5rem;
@@ -2459,20 +2590,20 @@ html .ui-button.ui-state-disabled:active {
     font-size: 1.5rem;
   }
   .serviceTab .container p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .contactus__left h1 {
     font-size: 2rem;
   }
   .contactus__left .subheading {
-    font-size: .83rem;
+    font-size: 0.83rem;
     font-weight: 200;
   }
   .contactus__left p {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .contact__social img {
-    margin-right: .85rem;
+    margin-right: 0.85rem;
     width: 30px;
   }
   .contactus .contactus__right {
@@ -2481,12 +2612,13 @@ html .ui-button.ui-state-disabled:active {
   .contactus .pricingContainer {
     padding: 2rem 1.5rem;
   }
-  .contactus__right form input, .contactus__right form textarea {
-    font-size: .8rem;
+  .contactus__right form input,
+  .contactus__right form textarea {
+    font-size: 0.8rem;
   }
   .btn {
     padding: 5px 15px;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .mobilemenu__header img:first-child {
     width: 130px;
@@ -2501,46 +2633,48 @@ html .ui-button.ui-state-disabled:active {
     font-size: 1.5rem;
   }
   .pricingshowcase__header p:last-child {
-    font-size: .85rem;
+    font-size: 0.85rem;
     width: 100%;
   }
   .pricingshowcase__bodyLeft ul li span {
-    font-size: .9rem;
+    font-size: 0.9rem;
     color: gray;
   }
   .pricingshowcase__bodyRight {
     padding: 1rem 1rem;
   }
-  .pricingshowcase__bodyRight form input, .pricingshowcase__bodyRight form textarea {
-    font-size: .8rem;
+  .pricingshowcase__bodyRight form input,
+  .pricingshowcase__bodyRight form textarea {
+    font-size: 0.8rem;
   }
   .pricingWorkShowCase__header h1 {
     font-size: 1.5rem;
   }
   .pricingWorkShowCase__header p:last-child {
     width: 100%;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .pricingWorkShowCaseBody {
     grid-template-columns: 1fr;
   }
-  .pricingWorkShowCaseBody div:first-child p, .pricingWorkShowCaseBody div:nth-child(2) p {
+  .pricingWorkShowCaseBody div:first-child p,
+  .pricingWorkShowCaseBody div:nth-child(2) p {
     margin-top: 0rem;
     color: whitesmoke;
-    font-size: .85rem !important;
+    font-size: 0.85rem !important;
   }
   .pricingWorkShowCaseBody h1 {
     font-size: 1.1rem;
   }
   .pricingWorkShowCaseBody p {
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .paymentAccept h1 {
     font-size: 1.2rem;
   }
   .paymentAccept .subheading {
     color: gray;
-    font-size: .85rem;
+    font-size: 0.85rem;
   }
   .paymentAccept img {
     width: 80%;
@@ -2549,8 +2683,23 @@ html .ui-button.ui-state-disabled:active {
     font-size: 1.15rem !important;
   }
   .serviceTab .container p {
-    font-size: .8rem;
-    margin-top: .5rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.15rem !important;
+  }
+
+  h2 {
+    font-size: 1rem !important;
+  }
+  .services {
+    padding-top: 1rem;
+  }
+  .services__body {
+    grid-gap: 2rem;
+    padding-bottom: 2rem;
   }
 }
 
