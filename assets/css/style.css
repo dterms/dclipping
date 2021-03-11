@@ -53,8 +53,8 @@ button:hover {
 }
 
 .section__header h1 {
-  font-size: 2.7rem;
-  color: dodgerblue !important;
+	font-size: 2.7rem;
+	color: #02a0ff !important;
 }
 .section__header p:first-child {
   color: #00e886 !important;
@@ -367,10 +367,10 @@ header .container {
   color: #535353;
 }
 .services__bodyService .context p {
-  font-size: 0.9rem;
-  line-height: 1.7rem;
-  font-weight: 300;
-  color: #75929ecc;
+	font-size: 0.9rem;
+	line-height: 1.7rem;
+	font-weight: 400;
+	color: #556a82cc;
 }
 
 /* service section ends here */
@@ -411,9 +411,10 @@ header .container {
   margin-bottom: 2rem;
 }
 .pricing__bodyPricing p {
-  font-weight: 300;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
+	font-weight: 400;
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+	color: #778693;
 }
 .pricing__bodyPricing img:last-child {
   background: #00b7ff;
@@ -756,11 +757,11 @@ header .container {
 }
 
 .clientTestimonial__right p {
-  font-weight: 300;
-  font-size: 0.85rem;
-  line-height: 30px;
-  color: gray;
-  margin-top: 1rem;
+	font-weight: 400;
+	font-size: 0.85rem;
+	line-height: 30px;
+	color: #95adbb;
+	margin-top: 1rem;
 }
 
 .clientTestimonial__right i {
@@ -2529,7 +2530,8 @@ html .ui-button.ui-state-disabled:active {
     font-size: 0.85rem;
   }
   .clientTestimonial__right p {
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    color: #000000b0;
   }
   .clientTestimonial__right .second {
     right: -50%;
@@ -2700,6 +2702,9 @@ html .ui-button.ui-state-disabled:active {
   .services__body {
     grid-gap: 2rem;
     padding-bottom: 2rem;
+  }
+  .clientTestimonial__right h5 {
+    width: 100%;
   }
 }
 
