@@ -70,3 +70,14 @@ $(document).ready(function(){
   }
   
 })
+
+var i;
+const services = document.querySelectorAll('.service');
+const showService = (service) => {
+
+  for(i=0; i < services.length; i++){
+    services[i].classList.remove('showservice');
+  }
+
+  document.getElementById(service).classList.add('showservice');
+}

@@ -295,6 +295,7 @@ header .container {
   /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .brands__icons .down {
   margin-top: 5rem;
@@ -964,7 +965,11 @@ footer .container {
 
 .affordAblePricing__left h1 {
 	font-size: 2rem;
-	color: #000000b3;
+	color: #000000d9;
+}
+
+.affordAblePricing__left p {
+	color: #000000d9;
 }
 
 .affordAblePricing .affordAblePricing__left .affordAblePricing__leftButtons button {
@@ -1175,11 +1180,11 @@ footer .container {
   display: block;
   width: 100%;
   margin: 1.5rem auto;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
   border-radius: 30px;
   border: 1px solid #d1d1d154;
   outline: none;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .workFlowContact__right button {
@@ -1326,10 +1331,11 @@ footer .container {
 .pricingWorkShowCase__header h1 {
   font-size: 2.5rem;
 }
-.pricingWorkShowCaseBody p {
-  font-weight: 300;
-  font-size: 0.95rem;
-  line-height: 30px;
+.servicePortfolio .container .col {
+	flex-basis: 30%;
+	overflow: hidden;
+	margin-bottom: 3rem;
+	border-radius: 10px;
 }
 
 .pricingWorkShowCaseBody div:first-child p {
@@ -1407,27 +1413,45 @@ footer .container {
   color: white;
 }
 .serviceTab .container h1 {
-  font-size: 3.5rem;
+	font-size: 2.5rem;
 }
 .serviceTab .container p {
-  font-size: 1.2rem;
+	font-size: 0.9rem;
+	width: 50%;
+	margin: auto;
 }
 
 .serviceBottom {
   padding: 4rem 0;
 }
 
-.serviceBottom__tabs {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem !important;
+.serviceservices__filterHeader {
+  width: 100%;
+  text-align: center;
+  margin-top: 3rem;
+}
+.serviceservices__filterHeader ul li {
+	display: inline-block;
+	font-family: 'Poppins', san-serif;
+	background: #ebf3f7;
+	color: #000000c4;
+	padding: .5rem 1rem;
+	border-radius: 30px;
+	margin: 0 .5rem;
+  cursor: pointer;
 }
 
-.serviceBottom__tabs li {
-  padding: 0.5rem 1.2rem;
-  background: white;
-  margin: 0 0.7rem;
-  border-radius: 30px;
+.serviceservices__filterHeader ul .active {
+  background: dodgerblue;
+  color: white;
+}
+
+.serviceservices__filter .service {
+  display: none;
+}
+
+.serviceservices__filter .showservice {
+  display: block;
 }
 
 .serviceBottom__service {
@@ -1980,6 +2004,12 @@ html .ui-button.ui-state-disabled:active {
     grid-template-columns: 1fr;
     grid-row-gap: 2rem;
   }
+  .serviceTab .container h1 {
+    font-size: 2rem !important;
+  }
+  .serviceTab .container p {
+    width: 70%;
+  }
 }
 
 /* for screen size 1150px */
@@ -2208,6 +2238,31 @@ html .ui-button.ui-state-disabled:active {
 	width: 60%;
 	margin-bottom: 1rem;
 }
+
+  .serviceTab .container h1 {
+    font-size: 1.5rem !important;
+  }
+  .serviceTab .container p {
+    font-size: .9rem;
+  }
+  .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    padding: .5em;
+    font-size: .8rem;
+  }
+  .ui-tabs .ui-tabs-nav li {
+    margin: 0.4rem .2rem !important;
+  }
+  .serviceCalltoaction__features div:first-child ul li:last-child {
+    margin-bottom: 0;
+  }
+  .servicePortfolio .container .col {
+    margin-bottom: 0rem;
+  }
+  .footer__columnOne p {
+    width: 85%;
+    font-size: .85rem;
+  }
+
 }
 
 /* for screen size 750px */
@@ -2307,6 +2362,13 @@ html .ui-button.ui-state-disabled:active {
   .services__body {
     grid-template-columns: 1fr;
   }
+  .serviceTab {
+    height: 50vh;
+  }
+  .serviceTab .container p {
+    width: 100%;
+    font-size: .8rem;
+  }
 }
 /* for screen size 600px */
 @media screen and (max-width: 600px) {
@@ -2329,10 +2391,6 @@ html .ui-button.ui-state-disabled:active {
     button {
     font-size: .85rem;
 	margin: 0;
-  }
-
-  .serviceTab {
-    height: 25vh;
   }
 
   .clientTestimonial__right h5 {
@@ -2485,6 +2543,13 @@ html .ui-button.ui-state-disabled:active {
   }
   .paymentAccept img {
     width: 80%;
+  }
+  .serviceTab .container h1 {
+    font-size: 1.15rem !important;
+  }
+  .serviceTab .container p {
+    font-size: .8rem;
+    margin-top: .5rem;
   }
 }
 
