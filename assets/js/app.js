@@ -4,11 +4,31 @@ const hamburger = document.querySelector('#amarmenu').addEventListener('click', 
   mobilemenu.classList.toggle('showmobilemenu')
 })
 
+const sticky__header = document.querySelector('header')
+const sticky__mobilemenu = document.querySelector('.mobilemenu') 
+
+
+let pos;
+window.addEventListener('scroll', () => {
+  
+  let scroll = window.scrollY;
+
+  if(pos > scroll){
+    sticky__header.style.top = "0"
+    sticky__mobilemenu.style.top = "0"
+  } else {
+    sticky__header.style.top = "-100px"
+    sticky__mobilemenu.style.top = "-100px"
+    console.log('false')
+  }
+  pos = scroll
+})
+
 
 var fileName = location.pathname.substring(
   location.pathname.lastIndexOf("/") + 1
 );
-console.log(fileName);
+// console.log(fileName);
 
 
 // jquery codes

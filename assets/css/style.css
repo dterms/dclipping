@@ -68,7 +68,12 @@ button:hover {
 /* header style stars from here */
 
 header {
-  box-shadow: 0 0 10px 0px #00000012;
+	background: white;
+	box-shadow: 0 0 10px 0px #00000012;
+	transition: all .5s;
+	position: sticky;
+	left: 0;
+	right: 0;
 }
 
 header .container {
@@ -128,6 +133,7 @@ header .container {
 /* mobile menu style starts here */
 
 .mobilemenu {
+  background: white;
   height: 7vh;
   overflow: hidden;
   /* margin-bottom: 2.5rem; */
@@ -138,6 +144,9 @@ header .container {
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
   display: none;
+  position: sticky;
+	left: 0;
+	right: 0;
 }
 
 .showmobilemenu {
@@ -2395,6 +2404,20 @@ html .ui-button.ui-state-disabled:active {
     width: 80%;
     margin-bottom: 1rem;
   }
+  .brands__icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding-left: 2.5rem;
+  }
+  .brands__icons .down {
+    margin-top: 0rem;
+  }
+  .brands__icons .mobilenone {
+    display: none;
+  }
 }
 
 /* for screen size 750px */
@@ -2705,6 +2728,11 @@ html .ui-button.ui-state-disabled:active {
   }
   .clientTestimonial__right h5 {
     width: 100%;
+  }
+  
+  .brands__icons {
+    grid-template-columns: repeat(2, 1fr) !important;
+    padding-left: .5rem;
   }
 }
 
