@@ -14,6 +14,7 @@ let pos;
 window.addEventListener("scroll", () => {
   let scroll = window.scrollY;
 
+  console.clear()
   console.log(scroll)
 
   if (fileName == "service.html") {
@@ -134,4 +135,10 @@ const showService = (service) => {
   }
 
   document.getElementById(service).classList.add("showservice");
+
+  if(screen.availHeight > 900 && screen.availWidth > 600){
+    scrollTo(0, 700)
+  } else if (screen.availHeight < 700 && screen.availWidth < 400){
+    scrollTo(0, 400)
+  }
 };

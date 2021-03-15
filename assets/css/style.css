@@ -53,14 +53,14 @@ button:hover {
 }
 
 .section__header h1 {
-	font-size: 2.7rem;
-	color: #02a0ff !important;
+  font-size: 2.7rem;
+  color: #02a0ff !important;
 }
 .section__header p:first-child {
   color: #00e886 !important;
 }
 .section__header p {
-  color: gray !important;
+  color: #556a82cc !important;
 }
 
 /* default elements styles ends from here */
@@ -68,12 +68,12 @@ button:hover {
 /* header style stars from here */
 
 header {
-	background: white;
-	box-shadow: 0 0 10px 0px #00000012;
-	transition: all .5s;
-	position: sticky;
-	left: 0;
-	right: 0;
+  background: white;
+  box-shadow: 0 0 10px 0px #00000012;
+  transition: all 0.5s;
+  position: sticky;
+  left: 0;
+  right: 0;
 }
 
 header .container {
@@ -145,8 +145,8 @@ header .container {
   -o-transition: all 0.5s;
   display: none;
   position: sticky;
-	left: 0;
-	right: 0;
+  left: 0;
+  right: 0;
 }
 
 .showmobilemenu {
@@ -376,10 +376,10 @@ header .container {
   color: #535353;
 }
 .services__bodyService .context p {
-	font-size: 0.9rem;
-	line-height: 1.7rem;
-	font-weight: 400;
-	color: #556a82cc;
+  font-size: 0.9rem;
+  line-height: 1.7rem;
+  font-weight: 400;
+  color: #556a82cc;
 }
 
 /* service section ends here */
@@ -407,7 +407,7 @@ header .container {
 
 .pricing__body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   text-align: center;
 }
 
@@ -416,14 +416,14 @@ header .container {
 }
 
 .pricing__bodyPricing img:first-child {
-  width: 10%;
+  width: 7%;
   margin-bottom: 2rem;
 }
 .pricing__bodyPricing p {
-	font-weight: 400;
-	font-size: 0.9rem;
-	margin-bottom: 1rem;
-	color: #778693;
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #778693;
 }
 .pricing__bodyPricing img:last-child {
   background: #00b7ff;
@@ -766,11 +766,11 @@ header .container {
 }
 
 .clientTestimonial__right p {
-	font-weight: 400;
-	font-size: 0.85rem;
-	line-height: 30px;
-	color: #95adbb;
-	margin-top: 1rem;
+  font-weight: 400;
+  font-size: 0.85rem;
+  line-height: 30px;
+  color: #95adbb;
+  margin-top: 1rem;
 }
 
 .clientTestimonial__right i {
@@ -982,10 +982,7 @@ footer .container {
   color: #000000d9;
 }
 
-.affordAblePricing
-  .affordAblePricing__left
-  .affordAblePricing__leftButtons
-  button {
+.affordAblePricing__leftButtons a {
   background: -webkit-linear-gradient(
     -22deg,
     rgb(13, 135, 201) 0%,
@@ -994,12 +991,19 @@ footer .container {
   font-weight: bold;
   padding: 0.5rem 1.5rem;
   font-family: "Poppins", sans-serif;
+  border-radius: 30px;
+  color: white;
+  transition: all .5s;
 }
 
-.affordAblePricing
+.affordAblePricing__leftButtons a:hover {
+  transform: scale(.9);
+}
+
+/* .affordAblePricing
   .affordAblePricing__left
   .affordAblePricing__leftButtons
-  button:last-child {
+  a:last-child {
   background: white !important;
   border: 1px solid dodgerblue;
   color: dodgerblue;
@@ -1008,7 +1012,7 @@ footer .container {
 .affordAblePricing
   .affordAblePricing__left
   .affordAblePricing__leftButtons
-  button:last-child:hover {
+  a:last-child:hover {
   transform: scale(1);
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -1016,7 +1020,7 @@ footer .container {
   -o-transform: scale(1);
   background: dodgerblue !important;
   color: white !important;
-}
+} */
 
 /* afforable pricing section ends here */
 
@@ -1078,10 +1082,11 @@ footer .container {
   grid-gap: 50px;
 }
 
-.workShowCaseBody__top h1, .workShowCaseBody__bottom h1 {
-	color: #000000b0;
-	font-weight: 600;
-	font-size: 1.4rem;
+.workShowCaseBody__top h1,
+.workShowCaseBody__bottom h1 {
+  color: #000000b0;
+  font-weight: 600;
+  font-size: 1.4rem;
 }
 
 .workShowCaseBody__top div:nth-child(4),
@@ -1094,7 +1099,7 @@ footer .container {
 }
 
 .workShowCaseBody div p {
-  color: #00000085;
+  color: #556a82cc;
   font-weight: 300;
 }
 
@@ -1367,20 +1372,20 @@ footer .container {
 }
 
 .pricingWorkShowCaseBody div:first-child p {
-	margin-top: 3.5rem;
-	color: #e6e6e6;
+  margin-top: 3.5rem;
+  color: #e6e6e6;
 }
 .pricingWorkShowCaseBody div p {
-	color: #e6e6e6;
+  color: #e6e6e6;
 }
 
 .image-uploader .upload-text i {
-	color: #00abff;
+  color: #00abff;
 }
 
 .image-uploader .upload-text span {
-	display: block;
-	color: gray;
+  display: block;
+  color: gray;
 }
 
 .pricingWorkShowCaseBody div:nth-child(2) p {
@@ -1401,9 +1406,9 @@ footer .container {
   text-align: center;
 }
 .pricingWorkShowCaseBody h1 {
-	margin: 1rem 0;
-	font-size: 1.5rem;
-	font-weight: 600;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /* pricng work showcase ends here */
@@ -1416,16 +1421,16 @@ footer .container {
 }
 
 .paymentAccept h1 {
-	font-size: 2.5rem;
-	color: #000000c7;
+  font-size: 2.5rem;
+  color: #000000c7;
 }
 
 .paymentAccept .subheading {
-	width: 50%;
-	margin: 0 auto;
-	font-weight: 300;
-	line-height: 30px;
-	color: #00000038;
+  width: 50%;
+  margin: 0 auto;
+  font-weight: 300;
+  line-height: 30px;
+  color: #00000038;
 }
 /* payment section ends here */
 
@@ -1547,7 +1552,7 @@ html .ui-button.ui-state-disabled:active {
 .serviceBottom__service p {
   font-weight: 300;
   line-height: 2rem;
-  color: #a2bbc5;
+  color: #556a82cc;
   font-size: 0.95rem;
 }
 
@@ -1578,7 +1583,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .portfolioContainer p:last-child {
   font-weight: 300;
-  color: gray;
+  color: #556a82cc;
   width: 50%;
   margin: auto;
   line-height: 2rem;
@@ -1854,7 +1859,7 @@ html .ui-button.ui-state-disabled:active {
   border-radius: 30px;
   border: none;
   background: #f9f9fb;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 .contactus__right form textarea {
@@ -2229,7 +2234,7 @@ html .ui-button.ui-state-disabled:active {
   .serviceBottom__service h1 {
     font-size: 1.5rem;
   }
-  
+
   .affordAblePricing__left {
     margin-top: 0rem;
   }
@@ -2248,6 +2253,9 @@ html .ui-button.ui-state-disabled:active {
   }
   .services__body {
     grid-gap: 2rem;
+  }
+  .pricing__body {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
@@ -2321,16 +2329,15 @@ html .ui-button.ui-state-disabled:active {
     width: 100%;
   }
   .workflow__body h3 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .workflow__body h3 {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
   .affordAblePricing__left p {
     color: #00000047;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-
 }
 
 /* for screen size 850px */
@@ -2532,9 +2539,9 @@ html .ui-button.ui-state-disabled:active {
     font-size: 0.8rem;
   }
   .serviceservices__filterHeader ul li {
-    padding: 0.35rem 0.5rem;
-    margin: 0.3rem;
-    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+    margin: 0.15rem;
+    font-size: 0.65rem;
   }
 }
 /* for screen size 600px */
@@ -2740,10 +2747,10 @@ html .ui-button.ui-state-disabled:active {
   .clientTestimonial__right h5 {
     width: 100%;
   }
-  
+
   .brands__icons {
     grid-template-columns: repeat(2, 1fr) !important;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
   }
 }
 

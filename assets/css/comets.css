@@ -511,6 +511,11 @@ ul li a {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+.mx_auto {
+    margin: auto;
+}
+
 /* margin styling starts here */
 
 /* flex box starts here */
