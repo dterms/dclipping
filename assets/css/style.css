@@ -982,24 +982,6 @@ footer .container {
   color: #000000d9;
 }
 
-.affordAblePricing__leftButtons a {
-  background: -webkit-linear-gradient(
-    -22deg,
-    rgb(13, 135, 201) 0%,
-    rgb(119, 204, 122) 100%
-  );
-  font-weight: bold;
-  padding: 0.5rem 1.5rem;
-  font-family: "Poppins", sans-serif;
-  border-radius: 30px;
-  color: white;
-  transition: all .5s;
-}
-
-.affordAblePricing__leftButtons a:hover {
-  transform: scale(.9);
-}
-
 /* .affordAblePricing
   .affordAblePricing__left
   .affordAblePricing__leftButtons
@@ -1554,6 +1536,7 @@ html .ui-button.ui-state-disabled:active {
   line-height: 2rem;
   color: #556a82cc;
   font-size: 0.95rem;
+  text-align: justify;
 }
 
 .serviceBottom__service ul {
@@ -2137,6 +2120,7 @@ html .ui-button.ui-state-disabled:active {
   .workFlowContact .container {
     grid-template-columns: 1fr;
     width: 80%;
+    grid-gap: 3rem;
   }
 
   .workShowCase__header p {
@@ -2543,6 +2527,16 @@ html .ui-button.ui-state-disabled:active {
     margin: 0.15rem;
     font-size: 0.65rem;
   }
+  .workFlowContact button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+  }
+  .affordAblePricing__leftButtons a {
+    font-size: 0.7rem;
+  }
+  .affordAblePricing__leftButtons a:first-child {
+    margin-right: 15px;
+  }
 }
 /* for screen size 600px */
 @media screen and (max-width: 600px) {
@@ -2751,6 +2745,14 @@ html .ui-button.ui-state-disabled:active {
   .brands__icons {
     grid-template-columns: repeat(2, 1fr) !important;
     padding-left: 0.5rem;
+  }
+  .pricingshowcase button {
+    width: 100%;
+    padding: 0.6rem 1rem;
+  }
+  .affordAblePricing__left button {
+    font-size: .85rem;
+    padding: .4rem .6rem;
   }
 }
 
