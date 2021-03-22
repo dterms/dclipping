@@ -42,7 +42,7 @@ button {
   -o-border-radius: 30px;
   border: none;
   outline: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 button:hover {
@@ -385,10 +385,67 @@ header .container {
 
 /* service section ends here */
 
+/* categories section starts here */
+
+.categories {
+  background: rgba(240, 240, 240, 0.24);
+}
+.categories .container {
+  width: 55%;
+}
+.categories .categories__body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  padding: 4rem 0;
+}
+.categories__bodyCategory.category {
+	background: white;
+	border-radius: 10px;
+	padding: 2rem 2rem;
+	border-bottom: 4px solid dodgerblue;
+	box-shadow: 0 0 10px 0 #00f3ff0f;
+  position: relative;
+  overflow: hidden;
+}
+.categories__bodyCategory.category span {
+	background: #00FFA3;
+	height: 50px;
+	width: 50px;
+	display: block;
+	border-radius: 50%;
+	position: absolute;
+	top: -15%;
+	right: 10%;
+}
+.categories__bodyCategory.category h3 {
+  font-weight: 500;
+  color: #000000b5;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+}
+
+.categories .categories__body .category .pulse {
+	background: white;
+	box-shadow: 0 0 10px 0 rgba(135, 207, 235, 0.25);
+	padding: .5rem .7rem;
+	border-radius: 10px;
+	margin-bottom: .5rem;
+}
+
+.categories__bodyCategory.category .servicewave {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+/* categories section ends here */
+
 /* pricing section starts from here */
 
 .pricing {
-  background: #f5f5f570;
   padding: 3rem 0;
 }
 .pricing__header {
@@ -1888,6 +1945,12 @@ html .ui-button.ui-state-disabled:active {
 
 /* responsive starts from here */
 
+/* for screen size 1730px */
+@media screen and (max-width: 1730px) {
+  .categories .container {
+    width: 60%;
+  }
+}
 /* for screen size 1605px */
 @media screen and (max-width: 1665px) {
   header .container {
@@ -1941,6 +2004,9 @@ html .ui-button.ui-state-disabled:active {
     font-size: 2.5rem;
     width: 40%;
     margin-bottom: 1rem;
+  }
+  .categories .container {
+    width: 70%;
   }
 }
 
@@ -2042,6 +2108,9 @@ html .ui-button.ui-state-disabled:active {
     padding: 0;
     padding-bottom: 4rem;
   }
+  .categories .container {
+    width: 80%;
+  }
 }
 
 /* for screen size 1250px */
@@ -2088,6 +2157,9 @@ html .ui-button.ui-state-disabled:active {
     font-size: 2.5rem;
     width: 70%;
     margin-bottom: 1rem;
+  }
+  .categories__bodyCategory.category h3 {
+    font-size: 1rem;
   }
 }
 
@@ -2142,6 +2214,9 @@ html .ui-button.ui-state-disabled:active {
 
   .header__middle .nav_link {
     margin-right: 0.5rem;
+  }
+  .categories .categories__body {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -2323,6 +2398,12 @@ html .ui-button.ui-state-disabled:active {
     color: #00000047;
     font-size: 0.9rem;
   }
+  .categories__bodyCategory.category {
+    height: 135px !important;
+  }
+  .categories__bodyCategory.category span {
+    top: -25%;
+  }
 }
 
 /* for screen size 850px */
@@ -2420,6 +2501,19 @@ html .ui-button.ui-state-disabled:active {
   }
   .brands__icons .mobilenone {
     display: none;
+  }
+  .categories .categories__body {
+    grid-gap: 0rem;
+    grid-row-gap: 2rem;
+    padding: 2.5rem 0;
+  }
+  .categories__bodyCategory.category {
+    padding: 1rem 1rem;
+    height: 120px;
+    width: 180px;
+  }
+  .categories__bodyCategory.category h3 {
+    font-size: .85rem;
   }
 }
 
@@ -2537,6 +2631,13 @@ html .ui-button.ui-state-disabled:active {
   }
   .affordAblePricing__leftButtons a:first-child {
     margin-right: 15px;
+  }
+  .categories .categories__body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+  .categories__bodyCategory.category {
+    width: unset;
   }
 }
 /* for screen size 600px */
@@ -2752,9 +2853,16 @@ html .ui-button.ui-state-disabled:active {
     padding: 0.6rem 1rem;
   }
   .affordAblePricing__left button {
-    font-size: .85rem;
-    padding: .4rem .6rem;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
   }
+  .categories .categories__body {
+    grid-gap: 1rem;
+  }
+  .categories .categories__body .category .pulse {
+    width: 45px;
+  }
+
 }
 
 /* responsiveness in height starts here */
