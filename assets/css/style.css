@@ -390,9 +390,6 @@ header .container {
 .categories {
   background: rgba(240, 240, 240, 0.24);
 }
-.categories .container {
-  width: 55%;
-}
 .categories .categories__body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -402,8 +399,7 @@ header .container {
 .categories__bodyCategory.category {
 	background: white;
 	border-radius: 10px;
-	padding: 2rem 2rem;
-	border-bottom: 4px solid dodgerblue;
+	padding: 1.5rem;
 	box-shadow: 0 0 10px 0 #00f3ff0f;
   position: relative;
   overflow: hidden;
@@ -419,10 +415,11 @@ header .container {
 	right: 10%;
 }
 .categories__bodyCategory.category h3 {
-  font-weight: 500;
-  color: #000000b5;
-  font-size: 1.1rem;
-  margin-bottom: .5rem;
+	font-weight: 500;
+	color: #000000b5;
+	font-size: 1rem;
+	margin-bottom: .5rem;
+	text-transform: capitalize;
 }
 
 .categories .categories__body .category .pulse {
@@ -430,7 +427,7 @@ header .container {
 	box-shadow: 0 0 10px 0 rgba(135, 207, 235, 0.25);
 	padding: .5rem .7rem;
 	border-radius: 10px;
-	margin-bottom: .5rem;
+  width: 50px;
 }
 
 .categories__bodyCategory.category .servicewave {
@@ -2856,13 +2853,7 @@ html .ui-button.ui-state-disabled:active {
     font-size: 0.85rem;
     padding: 0.4rem 0.6rem;
   }
-  .categories .categories__body {
-    grid-gap: 1rem;
-  }
-  .categories .categories__body .category .pulse {
-    width: 45px;
-  }
-
+ 
 }
 
 /* responsiveness in height starts here */
