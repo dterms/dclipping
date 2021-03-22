@@ -2506,7 +2506,7 @@ html .ui-button.ui-state-disabled:active {
   }
   .categories__bodyCategory.category {
     padding: 1rem 1rem;
-    height: 120px;
+    height: 80px !important;
     width: 180px;
   }
   .categories__bodyCategory.category h3 {
@@ -2853,7 +2853,19 @@ html .ui-button.ui-state-disabled:active {
     font-size: 0.85rem;
     padding: 0.4rem 0.6rem;
   }
- 
+  .categories .categories__body {
+    grid-gap: 1rem;
+  }
+  .categories .categories__body .category .pulse {
+    width: 35px !important;
+    padding: .3rem .4rem !important;
+  }
+}
+/* for screen size below 400 */
+@media screen and (max-width: 400px) {
+  .categories__bodyCategory.category {
+    height: 100px !important;
+  }
 }
 
 /* responsiveness in height starts here */
